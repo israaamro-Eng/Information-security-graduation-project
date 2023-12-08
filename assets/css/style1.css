@@ -121,6 +121,8 @@ nav .search-bar input[type="search"]::placeholder{
 .logo h3{
     font-size: 3rem;
     font-weight: 600;
+    font-family: 'Hedvig Letters Serif', serif;
+    letter-spacing: 12px;
     text-transform: uppercase;
     user-select: none;
     color: var(--color-dark);
