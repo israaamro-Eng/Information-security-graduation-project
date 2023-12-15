@@ -64,29 +64,105 @@
 
             <!--...start Aside Bar...-->
             <aside>
-                <a href="" class="menu-item">
+                <a href="" class="menu-item active" >
                     <span><img src="assets/img/SVG/home-outline.svg" alt=""></span><h3>Home</h3>
                 </a>
 
-                <a href="" class="menu-item">
-                    <span><img src="assets/img/SVG/circle-question-regular.svg" alt=""></span><h3>Ask</h3>
+                <a href="" class="menu-item " >
+                    <span><img src="assets/img/SVG/notifications-outline.svg" alt=""></span>
+                    <small class="notfy-counter">7+</small>
+                    <h3>Notification</h3>
+
+
+                    <!--...........Notification box start..............-->
+
+                    <div class="notification-box">
+                        <div>
+                            <div class="profil-picture">
+                                <img src="assets/img/profile picture/lê on Twitter _ Crazy funny pictures, Mood pics, Funny images.jfif" alt="">
+                            </div>
+                            <div class="notification-body">
+                                <b>Baraa Ali</b> accepted your friend request
+                                <small class="text-gry">2 Days ago</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="profil-picture">
+                                <img src="assets/img/profile picture/Marni 🐾💙 (1).jpg"alt="">
+                            </div>
+                            <div class="notification-body">
+                                <b>Sana Awad</b> commented on your post
+                                <small class="text-gry">1 Hour ago</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="profil-picture">
+                                <img src="assets/img/profile picture/Mia.jfif" alt="">
+                            </div>
+                            <div class="notification-body">
+                                <b>Tala Amro</b> liked your post
+                                <small class="text-gry"> Just now</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="profil-picture">
+                                <img src="assets/img/profile picture/Mia.jfif" alt="">
+                            </div>
+                            <div class="notification-body">
+                                <b>Tala Amro</b> and <b>20 other</b> liked your post
+                                <small class="text-gry">2 Days ago</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="profil-picture">
+                                <img src="assets/img/profile picture/Marni 🐾💙 (1).jpg"alt="">
+                            </div>
+                            <div class="notification-body">
+                                <b>Sana Awad</b> and <b>5 others</b> commented on your post
+                                <small class="text-gry">1 Hour ago</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--...........Notification box end..............-->
                 </a>
 
                 <a href="" class="menu-item">
-                    <span><img src="assets/img/SVG/envelope-regular.svg" alt=""></span><h3>Message</h3>
+                    <span><img src="assets/img/SVG/skull-outline.svg" alt=""></span>
+                    <small class="notfy-counter">3</small>
+                    <h3>Ask</h3>
                 </a>
 
                 <a href="" class="menu-item">
-                    <span><img src="assets/img/SVG/message-regular.svg" alt=""></span><h3>Dr.Message</h3>
+                    <span><img src="assets/img/SVG/mail-outline.svg" alt=""></span>
+                    <small class="notfy-counter">5</small>
+                    <h3>Message</h3>
+                </a>
+
+                <a href="" class="menu-item">
+                    <span><img src="assets/img/SVG/chatbubbles-outline.svg" alt=""></span>
+                    <small class="notfy-counter">1</small>
+                    <h3>Dr.Message</h3>
                 </a>
 
                 <a href="" class="menu-item">
                     <span><img src="assets/img/SVG/color-palette-outline.svg" alt=""></span><h3>Theme</h3>
                 </a>
 
-                <a href="" class="menu-item">
+                <a href="" class="menu-item ">
                     <span><img src="assets/img/SVG/settings-outline.svg" alt=""></span><h3>Settings</h3>
                 </a>
+
+                <!--.............Add post Btn...........-->
+
+                 <label for="add-post" class="btn btn-primary btn-lg">Create a Post</label>
+
+                <!--.............Add post Btn...........-->
 
             </aside>
             <!--...end Aside Bar.....-->
@@ -98,29 +174,298 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!--.............main middle start...............-->
         <div class="main-middle">
+            <div class="middle-container">
 
+                 <!--..............post input................-->
+            <form class="add-post">
+                <div class="profil-picture" id="my-profile-picture">
+                    <img src="assets/img/profile picture/Samurai by Sam Yang.jpg" alt="">
+                </div>
+                <input type="text" placeholder="What's on your mind ?" id="add-post">
+                <input type="submit" value="post" class="btn btn-primary">
+               
+            </form>
+
+            <!--.............feed aria start...............-->
+            <div class="feeds">
+
+                <div class="feed">
+
+                    <!--.............feed top...............-->
+                    <div class="feed-top">
+
+                        <div class="user">
+
+                            <div class="profil-picture" id="my-profile-picture">
+                                <img src="assets/img/profile picture/Samurai by Sam Yang.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Israa Amro</h3>
+                                <div class="time text-gry">
+                                    <small>PALESTINE, <span>2 Days Ago</span></small> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit">
+                            <img src="assets/img/SVG/ellipsis-horizontal-outline.svg" alt="">
+                            <ul class="edit-menu">
+                                <li><i class="fa fa-pen"></i>Edit</li>
+                                <li><i class="fa fa-trash"></i>Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--.........feed img..................-->
+                    <div class="feed-img">
+                        <h2> We have an exam tomorrow. <br>
+                        Students,please study well.</h2>
+                    </div>
+
+                    <!--.........feed action area...........-->
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="fa fa-heart"></i></span>
+                            <span><i class="fa fa-comment-dots"></i></span>
+                        </div>
+                    </div>
+
+
+                    <!--........liked by........-->
+                    <div class="liked-by">
+                        <span><img src="assets/img/profile picture/lê on Twitter _ Crazy funny pictures, Mood pics, Funny images.jfif" alt=""></span>
+                        <span><img src="assets/img/profile picture/Marni 🐾💙 (1).jpg" alt=""></span>
+                        <span><img src="assets/img/profile picture/Mia.jfif" alt=""></span>
+                        <p> Liked by <b>Baraa Ali</b> and <b>77comments other</b></p>
+                    </div>
+
+                    <!--.......caption........-->
+                    <div class="caption">
+                        <p><b>Israa Amro</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam inventore maxime cumque voluptas quod ipsum ducimus iure cum tenetur, repellendus voluptatum voluptates dolores ad nostrum, non fugiat, illum esse culpa.
+                        <span class="hars-tag">#study</span></p>
+                    </div>
+
+                    <!--.......comment........-->
+                    <div class="comments text-gry">
+                        View all comments
+                    </div>
+
+
+
+                </div>
+
+                <div class="feed">
+
+                    <!--.............feed top...............-->
+                    <div class="feed-top">
+
+                        <div class="user">
+
+                            <div class="profil-picture" id="my-profile-picture">
+                                <img src="assets/img/profile picture/Samurai by Sam Yang.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Israa Amro</h3>
+                                <div class="time text-gry">
+                                    <small>PALESTINE, <span>2 Days Ago</span></small> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit">
+                            <img src="assets/img/SVG/ellipsis-horizontal-outline.svg" alt="">
+                            <ul class="edit-menu">
+                                <li><i class="fa fa-pen"></i>Edit</li>
+                                <li><i class="fa fa-trash"></i>Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--.........feed img..................-->
+                    <div class="feed-img">
+                        <img src="assets/img/feed img/تنزيل (2).jpg" alt="">
+                    </div>
+
+                    <!--.........feed action area...........-->
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="fa fa-heart"></i></span>
+                            <span><i class="fa fa-comment-dots"></i></span>
+                        </div>
+                    </div>
+
+
+                    <!--........liked by........-->
+                    <div class="liked-by">
+                        <span><img src="assets/img/profile picture/lê on Twitter _ Crazy funny pictures, Mood pics, Funny images.jfif" alt=""></span>
+                        <span><img src="assets/img/profile picture/Marni 🐾💙 (1).jpg" alt=""></span>
+                        <span><img src="assets/img/profile picture/Mia.jfif" alt=""></span>
+                        <p> Liked by <b>Baraa Ali</b> and <b>77comments other</b></p>
+                    </div>
+
+                    <!--.......caption........-->
+                    <div class="caption">
+                        <p><b>Israa Amro</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam inventore maxime cumque voluptas quod ipsum ducimus iure cum tenetur, repellendus voluptatum voluptates dolores ad nostrum, non fugiat, illum esse culpa.
+                        <span class="hars-tag">#study</span></p>
+                    </div>
+
+                    <!--.......comment........-->
+                    <div class="comments text-gry">
+                        View all comments
+                    </div>
+
+
+
+                </div>
+
+                <div class="feed">
+
+                    <!--.............feed top...............-->
+                    <div class="feed-top">
+
+                        <div class="user">
+
+                            <div class="profil-picture" id="my-profile-picture">
+                                <img src="assets/img/profile picture/Samurai by Sam Yang.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Israa Amro</h3>
+                                <div class="time text-gry">
+                                    <small>PALESTINE, <span>2 Days Ago</span></small> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit">
+                            <img src="assets/img/SVG/ellipsis-horizontal-outline.svg" alt="">
+                            <ul class="edit-menu">
+                                <li><i class="fa fa-pen"></i>Edit</li>
+                                <li><i class="fa fa-trash"></i>Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--.........feed img..................-->
+                    <div class="feed-img">
+                        <img src="assets/img/feed img/تنزيل (3).jpg" alt="">
+                    </div>
+
+                    <!--.........feed action area...........-->
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="fa fa-heart"></i></span>
+                            <span><i class="fa fa-comment-dots"></i></span>
+                        </div>
+                    </div>
+
+
+                    <!--........liked by........-->
+                    <div class="liked-by">
+                        <span><img src="assets/img/profile picture/lê on Twitter _ Crazy funny pictures, Mood pics, Funny images.jfif" alt=""></span>
+                        <span><img src="assets/img/profile picture/Marni 🐾💙 (1).jpg" alt=""></span>
+                        <span><img src="assets/img/profile picture/Mia.jfif" alt=""></span>
+                        <p> Liked by <b>Baraa Ali</b> and <b>77comments other</b></p>
+                    </div>
+
+                    <!--.......caption........-->
+                    <div class="caption">
+                        <p><b>Israa Amro</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam inventore maxime cumque voluptas quod ipsum ducimus iure cum tenetur, repellendus voluptatum voluptates dolores ad nostrum, non fugiat, illum esse culpa.
+                        <span class="hars-tag">#study</span></p>
+                    </div>
+
+                    <!--.......comment........-->
+                    <div class="comments text-gry">
+                        View all comments
+                    </div>
+
+
+
+                </div>
+
+                <div class="feed">
+
+                    <!--.............feed top...............-->
+                    <div class="feed-top">
+
+                        <div class="user">
+
+                            <div class="profil-picture" id="my-profile-picture">
+                                <img src="assets/img/profile picture/Samurai by Sam Yang.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Israa Amro</h3>
+                                <div class="time text-gry">
+                                    <small>PALESTINE, <span>2 Days Ago</span></small> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit">
+                            <img src="assets/img/SVG/ellipsis-horizontal-outline.svg" alt="">
+                            <ul class="edit-menu">
+                                <li><i class="fa fa-pen"></i>Edit</li>
+                                <li><i class="fa fa-trash"></i>Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--.........feed img..................-->
+                    <div class="feed-img">
+                        <img src="assets/img/feed img/تنزيل (4).jpg" alt="">
+                    </div>
+
+                    <!--.........feed action area...........-->
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="fa fa-heart"></i></span>
+                            <span><i class="fa fa-comment-dots"></i></span>
+                        </div>
+                    </div>
+
+
+                    <!--........liked by........-->
+                    <div class="liked-by">
+                        <span><img src="assets/img/profile picture/lê on Twitter _ Crazy funny pictures, Mood pics, Funny images.jfif" alt=""></span>
+                        <span><img src="assets/img/profile picture/Marni 🐾💙 (1).jpg" alt=""></span>
+                        <span><img src="assets/img/profile picture/Mia.jfif" alt=""></span>
+                        <p> Liked by <b>Baraa Ali</b> and <b>77comments other</b></p>
+                    </div>
+
+                    <!--.......caption........-->
+                    <div class="caption">
+                        <p><b>Israa Amro</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam inventore maxime cumque voluptas quod ipsum ducimus iure cum tenetur, repellendus voluptatum voluptates dolores ad nostrum, non fugiat, illum esse culpa.
+                        <span class="hars-tag">#study</span></p>
+                    </div>
+
+                    <!--.......comment........-->
+                    <div class="comments text-gry">
+                        View all comments
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!--.............feed aria end...............-->
+
+
+            </div> 
         </div>
         <!--.............main middle end...............-->
 
+
+
+
+
+
+
+
+
+
+
+
         <!--.............main right start...............-->
         <div class="main-right">
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellat ea architecto minima rem veniam consectetur enim ipsa labore, ipsum, laboriosam corporis distinctio illo illum ex autem atque, excepturi incidunt?
 
         </div>
         <!--.............main right end...............-->
