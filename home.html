@@ -48,7 +48,7 @@
 
        
             <!--...start Profile.....-->
-            <a href="" class="profile">
+            <a href="#" class="profile">
                 <div class="profil-picture" id="my-profile-picture">
                     <img src="assets/img/profile picture/Samurai by Sam Yang.jpg" alt="">
                 </div>
@@ -219,8 +219,10 @@
 
                     <!--.........feed img..................-->
                     <div class="feed-img">
+                        <div class="title">
                         <h2> We have an exam tomorrow. <br>
                         Students,please study well.</h2>
+                        </div>
                     </div>
 
                     <!--.........feed action area...........-->
@@ -242,7 +244,7 @@
 
                     <!--.......caption........-->
                     <div class="caption">
-                        <p><b>Israa Amro</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam inventore maxime cumque voluptas quod ipsum ducimus iure cum tenetur, repellendus voluptatum voluptates dolores ad nostrum, non fugiat, illum esse culpa.
+                        <p><b>Israa Amro</b>Lorem ipsum dolor sit amet.
                         <span class="hars-tag">#study</span></p>
                     </div>
 
@@ -305,6 +307,7 @@
 
                     <!--.......caption........-->
                     <div class="caption">
+                        <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit debitis, praesentium ex temporibus ipsum esse veritatis cumque doloribus distinctio id impedit, aperiam recusandae! Distinctio eligendi rerum repellendus reiciendis. Eum, porro.</div>
                         <p><b>Israa Amro</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam inventore maxime cumque voluptas quod ipsum ducimus iure cum tenetur, repellendus voluptatum voluptates dolores ad nostrum, non fugiat, illum esse culpa.
                         <span class="hars-tag">#study</span></p>
                     </div>
@@ -368,6 +371,7 @@
 
                     <!--.......caption........-->
                     <div class="caption">
+                        <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit debitis, praesentium ex temporibus ipsum esse veritatis cumque doloribus distinctio id impedit, aperiam recusandae! Distinctio eligendi rerum repellendus reiciendis. Eum, porro.</div>
                         <p><b>Israa Amro</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam inventore maxime cumque voluptas quod ipsum ducimus iure cum tenetur, repellendus voluptatum voluptates dolores ad nostrum, non fugiat, illum esse culpa.
                         <span class="hars-tag">#study</span></p>
                     </div>
@@ -431,6 +435,7 @@
 
                     <!--.......caption........-->
                     <div class="caption">
+                        <div class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit debitis, praesentium ex temporibus ipsum esse veritatis cumque doloribus distinctio id impedit, aperiam recusandae! Distinctio eligendi rerum repellendus reiciendis. Eum, porro.</div>
                         <p><b>Israa Amro</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam inventore maxime cumque voluptas quod ipsum ducimus iure cum tenetur, repellendus voluptatum voluptates dolores ad nostrum, non fugiat, illum esse culpa.
                         <span class="hars-tag">#study</span></p>
                     </div>
@@ -453,15 +458,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
         <!--.............main right start...............-->
         <div class="main-right">
 
@@ -478,7 +474,53 @@
 
 
 
+<!--...............................start popups area .............................-->
 
+<div class="popup profile-popup">
+   <div>
+    <div class="popup-box profile-popup-box">
+        <h1>Israa Amro</h1>
+        <p>217109@ppu.edu.ps</p>
+        <div id="my-profile-picture">
+            <img src="assets/img/profile picture/Samurai by Sam Yang.jpg" >
+        </div>
+        <label for="profile-upload" class="btn btn-primary btn-lg">Update profile picture</label>
+        <input type="file" accept="image/jpg, image/png, image/jpeg" id="profile-upload">
+        <button class="btn btn-primary btn-lg">Log Out</button>
+    </div>
+
+    <span class="close"><i class="fa fa-close"></i></span>
+   </div>
+</div>
+
+<!--...............................end popups area .............................-->
+
+
+
+<!--...............................start add post popup .............................-->
+<div class="popup add-post-popup ">
+    <div>
+        <form class="popup-box add-post-popup">
+            <h1>Add new post</h1>
+            <div class="row post-title">
+                <label >Title</label>
+                <input type="text">
+            </div>
+            <div class="row post-title">
+                <img src="assets/img/profile picture/Samurai by Sam Yang.jpg" >
+                <label for="feed-pic-upload" class="feed-upload-button">
+                    <span><i class="fa fa-add"></i></span>
+                    Ulod a picture
+                </label>
+                <input type="file" accept="image/jpg, image/png, image/jpeg" id="feed-pic-upload">
+                <input type="submit" class="btn btn-primary btn-lg">Add post
+            </div>
+        </form>
+        <span class="close"><i class="fa fa-close"></i></span>
+    </div>
+
+</div>
+<!--...............................end add post popup .............................-->
 
 
 
