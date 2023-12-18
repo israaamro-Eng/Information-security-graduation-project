@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,13 +65,13 @@
 
             <!--...start Aside Bar...-->
             <aside>
-                <a href="" class="menu-item active" >
+                <a  class="menu-item  active" >
                     <span><img src="assets/img/SVG/home-outline.svg" alt=""></span><h3>Home</h3>
                 </a>
 
-                <a href="" class="menu-item " >
+                <a class="menu-item " id="Notify-box">
                     <span><img src="assets/img/SVG/notifications-outline.svg" alt=""></span>
-                    <small class="notfy-counter">7+</small>
+                    <small class="notfy-counter nt" id="ntcounter1">7+</small>
                     <h3>Notification</h3>
 
 
@@ -132,35 +133,35 @@
                     <!--...........Notification box end..............-->
                 </a>
 
-                <a href="" class="menu-item">
+                <a  class="menu-item" id="askMenu">
                     <span><img src="assets/img/SVG/skull-outline.svg" alt=""></span>
-                    <small class="notfy-counter">3</small>
+                    <small class="notfy-counter" id="notfycounter2">3</small>
                     <h3>Ask</h3>
                 </a>
 
-                <a href="" class="menu-item">
+                <a  class="menu-item" id="messageMenu">
                     <span><img src="assets/img/SVG/mail-outline.svg" alt=""></span>
-                    <small class="notfy-counter">5</small>
+                    <small class="notfy-counter" id="notfycounter3">5</small>
                     <h3>Message</h3>
                 </a>
 
-                <a href="" class="menu-item">
+                <a  class="menu-item" id="drMessageMenu">
                     <span><img src="assets/img/SVG/chatbubbles-outline.svg" alt=""></span>
-                    <small class="notfy-counter">1</small>
+                    <small class="notfy-counter" id="notfycounter4">1</small>
                     <h3>Dr.Message</h3>
                 </a>
 
-                <a href="" class="menu-item">
+                <a  class="menu-item">
                     <span><img src="assets/img/SVG/color-palette-outline.svg" alt=""></span><h3>Theme</h3>
                 </a>
 
-                <a href="" class="menu-item ">
+                <a class="menu-item ">
                     <span><img src="assets/img/SVG/settings-outline.svg" alt=""></span><h3>Settings</h3>
                 </a>
 
                 <!--.............Add post Btn...........-->
 
-                 <label for="add-post" class="btn btn-primary btn-lg">Create a Post</label>
+                 <label for="add-post" id="create-lg" class="btn btn-primary btn-lg" >Create a Post</label>
 
                 <!--.............Add post Btn...........-->
 
@@ -184,14 +185,14 @@
                     <img src="assets/img/profile picture/Samurai by Sam Yang.jpg" alt="">
                 </div>
                 <input type="text" placeholder="What's on your mind ?" id="add-post">
-                <input type="submit" value="post" class="btn btn-primary">
+                <input type="submit"  value="post" class="btn btn-primary" >
                
             </form>
 
             <!--.............feed aria start...............-->
             <div class="feeds">
 
-                <div class="feed">
+                <div class="feed myfeed">
 
                     <!--.............feed top...............-->
                     <div class="feed-top">
@@ -257,7 +258,7 @@
 
                 </div>
 
-                <div class="feed">
+                <div class="feed myfeed">
 
                     <!--.............feed top...............-->
                     <div class="feed-top">
@@ -321,7 +322,7 @@
 
                 </div>
 
-                <div class="feed">
+                <div class="feed myfeed">
 
                     <!--.............feed top...............-->
                     <div class="feed-top">
@@ -385,7 +386,7 @@
 
                 </div>
 
-                <div class="feed">
+                <div class="feed myfeed">
 
                     <!--.............feed top...............-->
                     <div class="feed-top">
@@ -460,9 +461,91 @@
 
         <!--.............main right start...............-->
         <div class="main-right">
+      
+             <!--.........start friends requests.............--> 
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellat ea architecto minima rem veniam consectetur enim ipsa labore, ipsum, laboriosam corporis distinctio illo illum ex autem atque, excepturi incidunt?
+            <div class="friend-request">
+                <h4>Requests</h4>
+                <div class="request">
+                    <div class="info">
+                        <div class="profil-picture">
+                            <img src="assets/img/profile picture/تنزيل.jfif" alt="">
+                        </div>
+                        <div>
+                            <h5>Mays Dabbas</h5>
+                            <p class="text-gry">
+                               4 mutual friends
+                            </p>
+                            <small class="text-gry alert">You have accepted friend request </small>
+                            
+                        </div>
+                    </div>
+                    <div class="action">
 
+                        <div class="btn btn-primary">
+                            Accept
+                        </div>
+                        <div class="btn btn-danger">
+                            Delete
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="request">
+                    <div class="info">
+                        <div class="profil-picture">
+                            <img src="assets/img/profile picture/Portfolio Archive - Anna Mason Art.png" alt="">
+                        </div>
+                        <div>
+                            <h5>Alaa Halawani</h5>
+                            <p class="text-gry">
+                               1 mutual friends
+                            </p>
+                            <small class="text-gry alert">You have accepted friend request </small>
+                            
+                        </div>
+                    </div>
+                    <div class="action">
+
+                        <div class="btn btn-primary">
+                            Accept
+                        </div>
+                        <div class="btn btn-danger">
+                            Delete
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="request">
+                    <div class="info">
+                        <div class="profil-picture">
+                            <img src="assets/img/profile picture/p1.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>Lama Ayayda</h5>
+                            <p class="text-gry">
+                               7 mutual friends
+                            </p>
+                            <small class="text-gry alert">You have accepted friend request </small>
+                            
+                        </div>
+                    </div>
+                    <div class="action">
+
+                        <div class="btn btn-primary">
+                            Accept
+                        </div>
+                        <div class="btn btn-danger">
+                            Delete
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        
+             <!--..........end friends requests.............-->
         </div>
         <!--.............main right end...............-->
 
@@ -504,16 +587,16 @@
             <h1>Add new post</h1>
             <div class="row post-title">
                 <label >Title</label>
-                <input type="text">
+                <input type="text"  placeholder="What's on your mind ?"   id="add-post">
             </div>
-            <div class="row post-title">
-                <img src="assets/img/profile picture/Samurai by Sam Yang.jpg" >
+            <div class="row post-img">
+                <img src="" id="postIMG">
                 <label for="feed-pic-upload" class="feed-upload-button">
                     <span><i class="fa fa-add"></i></span>
-                    Ulod a picture
+                    Upload a picture
                 </label>
                 <input type="file" accept="image/jpg, image/png, image/jpeg" id="feed-pic-upload">
-                <input type="submit" class="btn btn-primary btn-lg">Add post
+                <input type="submit" class="btn btn-primary btn-lg" value="Add post">
             </div>
         </form>
         <span class="close"><i class="fa fa-close"></i></span>
@@ -522,7 +605,34 @@
 </div>
 <!--...............................end add post popup .............................-->
 
+<!--...............................start theme customize popup .............................-->
 
+<div class="popup theme-customize">
+    <div>
+        <div class="popup-box theme-customize-popup-box">
+             <h2>Coustomize your theme</h2>
+
+             <!--.........background colors.........-->
+             <div class="background">
+                <h4>Bakground</h4>
+                <div class="choose-bg">
+                    <div class="bg1 active">
+                        <span></span>
+                        <h5 >Light</h5>
+                    </div>
+                    <div class="bg2">
+                        <span></span>
+                        <h5>Dark</h5>
+                    </div>
+                </div>
+             </div>
+
+        </div>
+        <span class="close"><i class="fa fa-close"></i></span>
+    </div>
+</div>
+
+<!--...............................end theme customize popup .............................-->
 
 
 

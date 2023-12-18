@@ -332,13 +332,16 @@ aside .menu-item:nth-last-child(2){
     margin: 2rem auto;
     line-height: 1.5;
     font-size:.8rem ;
-    position: relative;
+   
 }
 
 .feeds .feed .feed-top{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.myfeed .feed-top .edit{
     position: relative;
 }
 
@@ -430,30 +433,83 @@ aside .menu-item:nth-last-child(2){
     font-size: 1rem;
     color: var(--color-gray);
     transition: 300ms ease all;
+    cursor: pointer;
 }
 
 .edit .edit-menu li:hover {
     color:var(--color-dark);
 }
 
-
-
-
 /*...................end feed area........................*/
-
-
-
-
-
-
-
-
 /*...................end main medle........................*/
 
 
 
 
+/*..................start main right........................*/
+
+/*...............start friends requests....................*/
+
+.main-right{
+    margin-top: 43px;
+}
+
+.friend-request{
+    margin-top: 1rem;
+}
+
+.friend-request h4{
+    color: var(--color-gray);
+    margin: 1rem 0;
+}
+
+.request{
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-bottom: 1rem;
+}
+
+.alert{
+    display: none;
+}
+
+.request .info{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.request .action{
+    display: flex;
+    gap: 1rem;
+}
+
+.request .action .btn-danger{
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+/*.................end friends requests....................*/
+
+/*..................end main right........................*/
+
+
+
+
+
+
 /*..................end main section........................*/
+
+
+
+
+
+
+
+
+
+
 
 /*...................start popup area........................*/
 
@@ -476,9 +532,9 @@ aside .menu-item:nth-last-child(2){
     display: flex;
 }
 
-.profile-popup-box{
+.popup-box{
     width: 400px;
-    height: 460px;
+    height: max-content;
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
@@ -518,13 +574,120 @@ aside .menu-item:nth-last-child(2){
 
 /*.......start add post popup .........*/
 .add-post-popup{
-    display: block;
+  /*  display: flex;*/
+    gap: 1rem;
+}
+
+.post-title{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.post-title label{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.post-title input{
+    background: var(--color-light);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    font-size:1.1rem ;
+}
+
+.post-title input:focus{
+    border: 1px solid var(--color-gray);
+}
+
+.post-img{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+.post-img input[type='file']{
+    display: none;
+}
+
+.post-img .feed-upload-button{
+    cursor: pointer;
+}
+
+.post-img img{
+    width: 6rem;
+    margin: auto;
+}
+
+.post-img .feed-upload-button{
+    padding: var(--card-padding);
+    border: 2px dashed var(--color-dark);
+    font-weight: bold;
 }
 /*......end add post popup ............*/
 
 
+/*......start theme customize popup ............*/
 
+
+
+.theme-customize-popup-box h2{
+    margin-bottom: .5rem;
+}
+
+/*.......Background.........*/
+.choose-bg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.choose-bg>div{
+    display: flex;
+    width: 100%;
+    padding: var(--card-padding);
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+.choose-bg .active{
+   border: 2px solid var(--color-primary);
+}
+
+.choose-bg .bg1{
+    background:white ;
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.3);
+    color: black;
+}
+
+.choose-bg .bg2{
+    background:hsl(252 , 30% , 17%);
+    color: white
+}
+
+.choose-bg>div span{
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-gray);
+    margin-right: .4rem;
+}
+
+
+/*......end theme customize popup ............*/
 
 
 
 /*...................end popup area........................*/
+
+.liked{
+    font-weight: bold !important;
+    color: var(--color-danger);
+    transform: scale(1.1);
+}
