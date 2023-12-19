@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat</title>
+
+		<!--......................... Bootstrap............ ...............-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+
+		<!--......................... Font awesome .........................-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" >
+
+		<!--............................ CSS............................... -->
+		<link rel="stylesheet" type="text/css" href="assets/css/styleChat.css">
+        
+	</head>
+
+	<body>
+
+        <!--............................start full screen............................... -->
+		<div class="container-fluid h-100">
+        
+            <!--............................start working screen............................... -->
+			<div class="row justify-content-center h-100">
+
+                <!--.............Back to home page...........-->
+                <div class="back-to-home-btn">
+                    
+                 <label for="add-post" id="create-lg" class="btn btn-primary btn-lg" onclick="backToHome()">Back to Home</label>
+
+                </div>
+                 <!--.............Back to home page...........-->
+
+
+                <!--............................start left working screen............................... -->
+				<div class="col-md-4 col-xl-3 chat"> <div class="card mb-sm-3 mb-md-0 contacts_card">
+
+                    <!--.........................start search section.................................-->
+					<div class="card-header">
+						<div class="input-group">
+							<input type="text" placeholder="Search..." name="" class="form-control search">
+							<div class="input-group-prepend">
+								<span class="input-group-text search_btn"><i class="fas fa-search"></i></span>
+							</div>
+						</div>
+					</div>
+                    <!--.........................end search section.................................-->
+
+                    <!--.........................start name of people section.................................-->
+					<div class="card-body contacts_body">
+						<ui class="contacts">
+
+                        <!--...first person in the chat...-->
+						<li class="active chat-name">
+							<div class="d-flex bd-highlight ">
+								<div class="img_cont">
+									<img src="assets/img/profile picture/lê on Twitter _ Crazy funny pictures, Mood pics, Funny images.jfif" class="rounded-circle user_img">
+									<span class="online_icon"></span>
+								</div>
+								<div class="user_info">
+									<span>Baraa Ali</span>
+									<p>Online</p>
+								</div>
+							</div>
+						</li>
+
+                        <!--...second person in the chat...-->
+						<li class="chat-name">
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="assets/img/profile picture/Mia.jfif" class="rounded-circle user_img">
+									<span class="online_icon offline"></span>
+								</div>
+								<div class="user_info">
+									<span>Tala Amro</span>
+									<p>Left 7 mins ago</p>
+								</div>
+							</div>
+						</li>
+
+                        <!--...3ed person in the chat...-->
+						<li class="chat-name">
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="assets/img/profile picture/p1.jpg" class="rounded-circle user_img">
+									<span class="online_icon"></span>
+								</div>
+								<div class="user_info">
+									<span>Lama Ayayda</span>
+									<p>Online</p>
+								</div>
+							</div>
+						</li>
+
+                        <!--...4th person in the chat...-->
+						<li class="chat-name">
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="assets/img/profile picture/تنزيل.jfif" class="rounded-circle user_img">
+									<span class="online_icon offline"></span>
+								</div>
+								<div class="user_info">
+									<span>Mays Dabbas</span>
+									<p>Left 30 mins ago</p>
+								</div>
+							</div>
+						</li>
+
+                        <!--...5th person in the chat...-->
+						<li class="chat-name">
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="assets/img/profile picture/Marni 🐾💙 (1).jpg" class="rounded-circle user_img">
+									<span class="online_icon offline"></span>
+								</div>
+								<div class="user_info">
+									<span>Sana Awad</span>
+									<p>Left 50 mins ago</p>
+								</div>
+							</div>
+						</li>
+						</ui>
+					</div>
+                    <!--.........................end name of people section.................................-->
+
+					<div class="card-footer"></div>
+				</div></div>
+                <!--............................end left working screen............................... -->
+
+
+                <!--............................start right working screen............................... -->
+				<div class="col-md-8 col-xl-6 chat">
+					<div class="card">
+
+                        <!--............................start top of right working screen............................... -->
+						<div class="card-header msg_head">
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="assets/img/profile picture/lê on Twitter _ Crazy funny pictures, Mood pics, Funny images.jfif" class="rounded-circle user_img">
+									<span class="online_icon"></span>
+								</div>
+								<div class="user_info">
+									<span>Baraa Ali</span>
+									<p>1767 Messages</p>
+								</div>
+								<div class="video_cam">
+									<span><i class="fas fa-video"></i></span>
+									<span><i class="fas fa-phone"></i></span>
+								</div>
+							</div>
+							<span id="action_menu_btn"><i class="fas fa-ellipsis-v"></i></span>
+							<div class="action_menu">
+								<ul>
+									<li><i class="fas fa-user-circle"></i> View profile</li>
+									<li><i class="fas fa-plus"></i> Add to group</li>
+									<li><i class="fas fa-ban"></i> Block</li>
+								</ul>
+							</div>
+						</div>
+                        <!--............................end top of right working screen............................... -->
+
+
+                        <!--............................start midlle of right working screen(messages)............................... -->
+						<div class="card-body msg_card_body">
+
+							<div class="d-flex justify-content-start mb-4">
+								<div class="img_cont_msg">
+									<img src="assets/img/profile picture/lê on Twitter _ Crazy funny pictures, Mood pics, Funny images.jfif" class="rounded-circle user_img_msg">
+								</div>
+								<div class="msg_cotainer">
+									Hi, how are you israa?
+									<span class="msg_time">8:40 AM, Today</span>
+								</div>
+							</div>
+
+							<div class="d-flex justify-content-end mb-4">
+								<div class="msg_cotainer_send">
+									Hi baraa i am good tnx how about you?
+									<span class="msg_time_send">8:55 AM, Today</span>
+								</div>
+								<div class="img_cont_msg" id="my-profile-picture">
+							<img src="assets/img/profile picture/Samurai by Sam Yang.jpg" class="rounded-circle user_img_msg">
+								</div>
+							</div>
+
+							<div class="d-flex justify-content-start mb-4">
+								<div class="img_cont_msg">
+									<img src="assets/img/profile picture/lê on Twitter _ Crazy funny pictures, Mood pics, Funny images.jfif" class="rounded-circle user_img_msg">
+								</div>
+								<div class="msg_cotainer">
+									I am good too, thank you for your chat template
+									<span class="msg_time">9:00 AM, Today</span>
+								</div>
+							</div>
+
+							<div class="d-flex justify-content-end mb-4">
+								<div class="msg_cotainer_send">
+									You are welcome
+									<span class="msg_time_send">9:05 AM, Today</span>
+								</div>
+								<div class="img_cont_msg" id="my-profile-picture">
+							<img src="assets/img/profile picture/Samurai by Sam Yang.jpg" class="rounded-circle user_img_msg">
+								</div>
+							</div>
+
+							<div class="d-flex justify-content-start mb-4">
+								<div class="img_cont_msg">
+									<img src="assets/img/profile picture/lê on Twitter _ Crazy funny pictures, Mood pics, Funny images.jfif"" class="rounded-circle user_img_msg">
+								</div>
+								<div class="msg_cotainer">
+									I am looking for your next templates
+									<span class="msg_time">9:07 AM, Today</span>
+								</div>
+							</div>
+
+							<div class="d-flex justify-content-end mb-4">
+								<div class="msg_cotainer_send">
+									Ok, thank you have a good day
+									<span class="msg_time_send">9:10 AM, Today</span>
+								</div>
+								<div class="img_cont_msg " id="my-profile-picture">
+						            <img src="assets/img/profile picture/Samurai by Sam Yang.jpg" class="rounded-circle user_img_msg">
+								</div>
+							</div>
+
+							<div class="d-flex justify-content-start mb-4">
+								<div class="img_cont_msg">
+									<img src="assets/img/profile picture/lê on Twitter _ Crazy funny pictures, Mood pics, Funny images.jfif"" class="rounded-circle user_img_msg">
+								</div>
+								<div class="msg_cotainer">
+									Bye, see you
+									<span class="msg_time">9:12 AM, Today</span>
+								</div>
+							</div>
+
+						</div>
+                        <!--............................end midlle of right working screen(messages)............................... -->
+
+
+                        <!--............................start last of right working screen(send)............................... -->
+						<div class="card-footer">
+							<div class="input-group">
+								<div class="input-group-append">
+									<span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
+								</div>
+								<textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
+								<div class="input-group-append">
+									<span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
+								</div>
+							</div>
+						</div>
+                        <!--............................end last of right working screen(send)............................... -->
+
+					</div>
+				</div>
+                <!--............................end right working screen............................... -->
+
+
+			</div>
+            <!--............................end working screen............................... -->
+		</div>
+        <!--............................end full screen............................... -->
+
+
+
+
+
+
+
+	<!-- .........................JQuery .................................-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/java/scriptHome.js"></script>
+	<script type="text/javascript" src="assets/java/scriptChat.js"></script>
+   
+	</body>
+</html>

@@ -9,13 +9,20 @@
 }
 
 :root{
-    --color-white: hsl(252 , 30% , 100%);
-    --color-light: hsl(252 , 30% , 90%);
+    
+    --color-dark-light-theme:15%;
+    --color-light-light-theme:92%;
+    --color-white-light-theme:100%;
+    --primary-color-hue:252;
+
+    --color-white: hsl(252 , 30% ,var(--color-white-light-theme));
+    --color-primary: hsl(var(--primary-color-hue) , 75% , 60%);
+
+    --color-light: hsl(252 , 30% ,var(--color-light-light-theme));
     --color-gray: hsl(252 , 15% , 60%);
-    --color-primary: hsl(252 , 75% , 60%);
     --color-secandary: hsl(252 , 100% , 90%);
     --color-danger: hsl(0 , 95% , 60%);
-    --color-dark: hsl(252 , 30% , 15%);
+    --color-dark: hsl(252 , 30% ,var(--color-dark-light-theme));
     --color-black: hsl(252 , 30% , 8%);
 
     --border-radius: 2rem;
@@ -567,6 +574,12 @@ aside .menu-item:nth-last-child(2){
     margin-left: .5rem;
     margin-top: -.5rem;
     cursor: pointer;
+}
+
+.icon-bg{
+    background: var(--color-dark);
+    padding: .2rem;
+    border-radius: .2rem;
 }
 /*.......end profile popup .........*/
 
