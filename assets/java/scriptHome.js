@@ -73,11 +73,15 @@ document.querySelectorAll('.close').forEach(AllClose => {
     })
 });
 
+
+
 document.querySelector('#profile-upload').addEventListener('change',()=>{
     document.querySelectorAll('#my-profile-picture img').forEach(AllMyProfileImg=>{
         AllMyProfileImg.src = URL.createObjectURL(document.querySelector('#profile-upload').files[0])
     })
 })
+
+
 
 //............window scroll...........
 window.addEventListener('scroll',() =>{
@@ -160,4 +164,8 @@ function logOut(){
 
 function goToChatPage(){
     window.location.href = 'chat.html';
+}
+
+function goToDrChatPage(){
+    window.location.href = 'drChat .html';
 }

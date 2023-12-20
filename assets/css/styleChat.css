@@ -82,6 +82,10 @@ html {
 	border-top: 0 !important;
 }
 
+.input-group input[type='file'] {
+    display: none;
+}
+
 .container {
 	align-content: center;
 }
@@ -115,6 +119,10 @@ html {
 	cursor: pointer;
 }
 
+.input-group-append .attach_btn{
+	margin-bottom: -.5rem;
+}
+
 .attach_btn {
 	border-radius: 15px 0 0 15px !important;
 	background-color: rgba(0, 0, 0, 0.3) !important;
@@ -129,6 +137,25 @@ html {
 	border: 0 !important;
 	color: white !important;
 	cursor: pointer;
+}
+
+.send-img{
+	padding-left: 40%;
+}
+
+.send-img img{
+     width: 6rem;
+	 margin: auto;
+}
+
+#zoomImage {
+   
+    transition: transform 0.3s ease-in-out;
+}
+
+#zoomImage.zoomed {
+    transform:scale(2,2); /* يمكنك تعديل قيمة الـ scale حسب احتياجاتك */
+    cursor: pointer;
 }
 
 .search_btn {

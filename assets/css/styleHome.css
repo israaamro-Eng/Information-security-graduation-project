@@ -384,10 +384,12 @@ aside .menu-item:nth-last-child(2){
 
 .action-button span:first-child i{
     font-weight: normal;
+    cursor: pointer;
 }
 
 .action-button span:nth-child(2) i{
     font-weight: normal;
+    cursor: pointer;
 }
 
 .liked-by{
