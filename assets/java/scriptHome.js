@@ -57,12 +57,13 @@ Delete.forEach(deletee=>{
 
 //............start profile popup.........
 document.querySelectorAll('#my-profile-picture').forEach(AllProfile => {
-    AllProfile.addEventListener('click',()=>{
-        document.querySelector('.profile-popup').style.display='flex'
-        document.querySelector('.img_cont_msg').style.display='flex'
-
+   AllProfile.addEventListener('click',()=>{
+       document.querySelector('.profile-popup').style.display='flex'
     })
 });
+
+
+
 
 document.querySelectorAll('.close').forEach(AllClose => {
     AllClose.addEventListener('click',()=>{
@@ -120,7 +121,7 @@ var root =document.querySelector(':root');
 let bg1 =document.querySelector('.bg1');
 let bg2 =document.querySelector('.bg2');
 
-//tgeme background value...
+//theme background value...
 
 let lightColorLightTheme;
 let whiteColorLightTheme;
@@ -158,6 +159,8 @@ const bgicon =()=>{
     })
 }
 
+//..............go to another page............... 
+
 function logOut(){
     window.location.href = 'log.html';
 }
@@ -169,3 +172,14 @@ function goToChatPage(){
 function goToDrChatPage(){
     window.location.href = 'drChat .html';
 }
+
+function goTomyProfilePage(){
+    window.location.href = 'myProfile.html';
+}
+
+function goToAskPage(){
+    window.location.href = 'ask.html';
+}
+
+
+

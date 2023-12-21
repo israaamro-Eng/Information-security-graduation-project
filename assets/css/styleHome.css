@@ -357,6 +357,14 @@ aside .menu-item:nth-last-child(2){
     gap: 1rem;
 }
 
+#ask-user{
+   display: none;
+}
+
+.comments{
+    cursor: pointer;
+}
+
 .feed .feed-top .edit img{
     width: 1.6rem;
 }

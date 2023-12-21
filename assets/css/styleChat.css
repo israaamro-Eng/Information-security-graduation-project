@@ -153,6 +153,11 @@ html {
     transition: transform 0.3s ease-in-out;
 }
 
+#create-lg{
+	margin-left: 0%;
+	margin-top: 54%;
+}
+
 #zoomImage.zoomed {
     transform:scale(2,2); /* يمكنك تعديل قيمة الـ scale حسب احتياجاتك */
     cursor: pointer;

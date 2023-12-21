@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> (UniSoc) Responsiv social media websit </title>
+
+                 <!--استدعاء ال css-->
+    <link rel="stylesheet" href="assets/css/styleHome.css">
+
+                 <!--استدعاء الفونت اوسم-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+<!--..................................start nav........................................-->
+
+  <nav>
+    <div class="container nav-container">
+        <div class="logo">
+            <h3>UniSoc</h3>
+        </div>
+
+        <div class="search-bar">
+            <i class="fa fa-search"></i>
+            <input type="search" placeholder="Search For Creators">
+        </div>
+
+        <div class="profil-picture" id="my-profile-picture">
+            <img src="assets/img/profile picture/Samurai by Sam Yang.jpg" alt="">
+        </div>
+
+    </div>
+  </nav>
+
+<!--..................................end nav...........................................-->
+
+
+
+<!--................................start main section..................................-->
+<main>
+
+    <div class="container main-container">
+
+        <!--.............main left start...............-->
+        <div class="main-left">
+
+                <!--.............Add post Btn...........-->
+
+                 <label for="add-post" id="create-lg" class="btn btn-primary btn-lg" onclick="backToHome()" >Back to home</label>
+
+                <!--.............Add post Btn...........-->
+
+
+        </div>
+        <!--.............main left end...............-->
+
+
+
+
+        <!--.............main middle start...............-->
+        <div class="main-middle">
+            <div class="middle-container">
+
+                 <!--..............post input................-->
+            <form class="add-post">
+                <div class="profil-picture" id="my-profile-picture">
+                    <img src="assets/img/profile picture/Samurai by Sam Yang.jpg" alt="">
+                </div>
+                <input type="text" placeholder="What's on your mind ?" id="add-post">
+                <input type="submit"  value="Ask" class="btn btn-primary" >
+               
+            </form>
+
+            <!--.............feed aria start...............-->
+            <div class="feeds">
+
+                <div class="feed myfeed" id="feed1">
+
+                    <!--.............feed top...............-->
+                    <div class="feed-top">
+
+                        <div class="user" id="ask-user">
+
+                            <div class="profil-picture" id="my-profile-picture">
+                                <img src="assets/img/profile picture/Samurai by Sam Yang.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Israa Amro</h3>
+                                <div class="time text-gry">
+                                    <small>PALESTINE, <span>2 Days Ago</span></small> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit">
+                            <img src="assets/img/SVG/ellipsis-horizontal-outline.svg" alt="">
+                            <ul class="edit-menu">
+                                <li ><i class="fa fa-pen"></i>Edit</li>
+                                <li id="delete" ><i class="fa fa-trash"></i>Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--.........feed img..................-->
+                    <div class="feed-img">
+                        <div class="title">
+                        <h2> I want to ask about Dr. X  <br>
+                        Who teaches the subject Y.</h2>
+                        </div>
+                    </div>
+
+                    <!--.........feed action area...........-->
+                    <div class="action-button">
+                        <div class="interaction-button" onclick="goToCommentPage()">
+                            <span><i class="fa fa-comment-dots"></i></span>
+                        </div>
+                    </div>
+                    
+                    <!--.......comment........-->
+                    <div class="comments text-gry" onclick="goToCommentPage()">
+                        View all comments
+                    </div>
+
+
+
+                </div>
+
+                <div class="feed myfeed">
+
+                    <!--.............feed top...............-->
+                    <div class="feed-top">
+
+                        <div class="user " id="ask-user" >
+
+                            <div class="profil-picture" id="my-profile-picture">
+                                <img src="assets/img/profile picture/Samurai by Sam Yang.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Israa Amro</h3>
+                                <div class="time text-gry">
+                                    <small>PALESTINE, <span>2 Days Ago</span></small> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit">
+                            <img src="assets/img/SVG/ellipsis-horizontal-outline.svg" alt="">
+                            <ul class="edit-menu">
+                                <li><i class="fa fa-pen"></i>Edit</li>
+                                <li><i class="fa fa-trash"></i>Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--.........feed img..................-->
+                    <div class="feed-img">
+                        <div class="title">
+                        <h2>How can I succeed in the subject Z <br>
+                        I want previous exams for her.</h2>
+                        </div>
+                    </div>
+
+                    <!--.........feed action area...........-->
+                    <div class="action-button">
+                        <div class="interaction-button" onclick="goToCommentPage()">
+                            <span><i class="fa fa-comment-dots"></i></span>
+                        </div>
+                    </div>
+                    
+                    <!--.......comment........-->
+                    <div class="comments text-gry" onclick="goToCommentPage()">
+                        View all comments
+                    </div>
+
+
+
+                </div>
+
+                <div class="feed myfeed">
+
+                    <!--.............feed top...............-->
+                    <div class="feed-top">
+
+                        <div class="user" id="ask-user">
+
+                            <div class="profil-picture" id="my-profile-picture">
+                                <img src="assets/img/profile picture/Samurai by Sam Yang.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Israa Amro</h3>
+                                <div class="time text-gry">
+                                    <small>PALESTINE, <span>2 Days Ago</span></small> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit">
+                            <img src="assets/img/SVG/ellipsis-horizontal-outline.svg" alt="">
+                            <ul class="edit-menu">
+                                <li><i class="fa fa-pen"></i>Edit</li>
+                                <li><i class="fa fa-trash"></i>Delete</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--.........feed img..................-->
+                    <div class="feed-img">
+                        <div class="title">
+                        <h2> Is moving to another university difficult? <br>
+                        I did not like this university.</h2>
+                        </div>
+                    </div>
+
+                    <!--.........feed action area...........-->
+                    <div class="action-button">
+                        <div class="interaction-button" onclick="goToCommentPage()">
+                            <span><i class="fa fa-comment-dots"></i></span>
+                        </div>
+                    </div>
+                    
+                    <!--.......comment........-->
+                    <div class="comments text-gry" onclick="goToCommentPage()">
+                        View all comments
+                    </div>
+                </div>
+        <!--.............main middle end...............-->
+
+
+
+        <!--.............main right start...............-->
+        <div class="main-right">
+      
+             <!--.........start friends requests.............--> 
+
+            
+        </div>
+        <!--.............main right end...............-->
+
+    </div>
+
+</main>
+
+<!--................................end main section..................................-->
+
+
+<!--...............................start add post popup .............................-->
+<div class="popup add-post-popup ">
+    <div>
+        <form class="popup-box add-post-popup">
+            <h1>Add new post</h1>
+            <div class="row post-title">
+                <label >Title</label>
+                <input type="text"  placeholder="What's on your mind ?"   id="add-post">
+            </div>
+            <div class="row post-img">
+                <img src="" id="postIMG">
+                <label for="feed-pic-upload" class="feed-upload-button">
+                    <span><i class="fa fa-add"></i></span>
+                    Upload a picture
+                </label>
+                <input type="file" accept="image/jpg, image/png, image/jpeg" id="feed-pic-upload">
+                <input type="submit" class="btn btn-primary btn-lg" value="Add post">
+            </div>
+        </form>
+        <span class="close"><i class="fa fa-close"></i></span>
+    </div>
+
+</div>
+<!--...............................end add post popup .............................-->
+
+
+
+
+
+
+
+
+                 <!--استدعاء ال js-->
+    
+    <script src="assets/java/scriptAsk.js"></script>
+</body>
+</html>
