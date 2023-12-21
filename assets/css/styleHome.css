@@ -297,6 +297,21 @@ aside .menu-item:nth-last-child(2){
 
 /*...................start main medle........................*/
 
+.main-middle .middle-container .some-info .my-ppp{
+    width: 9.8rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#some-info{
+    background: var(--color-light);
+}
+
+.bioo{
+    margin-left: 30px;
+}
+
 .middle-container{
     max-width: 700px !important;
     width: 90%;
@@ -327,6 +342,13 @@ aside .menu-item:nth-last-child(2){
 .main-middle .add-post .profil-picture{
     width: 2.8rem;
 }
+
+.follo-info{
+    display: flex;
+    box-sizing: border-box;
+    gap: 75px;
+}
+
 
 
 

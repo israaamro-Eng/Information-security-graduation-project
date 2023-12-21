@@ -11,7 +11,7 @@ $(document).ready(function(){
 });
 
 
-//........deler btn from action menu........
+//........delete btn from action menu........
 
 function deleteMessages() {
 	var messages = document.getElementsByClassName('message');
@@ -25,7 +25,7 @@ function deleteMessages() {
 
 
 
-  
+  //..............up laode picture....................
 
   document.querySelector('#feed-pic-upload').addEventListener('change',()=>{
     document.querySelector('#postIMG').src = URL.createObjectURL(document.querySelector('#feed-pic-upload').files[0]);
@@ -35,3 +35,9 @@ function deleteMessages() {
 document.getElementById('zoomImage').addEventListener('click', function() {
     this.classList.toggle('zoomed');
 });
+
+
+//..........btn back to home page............
+function backToAskPage(){
+  window.location.href = 'ask.html';
+}
